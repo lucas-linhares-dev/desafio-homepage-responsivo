@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    line-height: 1.5;
+}
+
+.about,.intro{
+    background-color: rgb(245, 245, 220,.3);
+    margin-top:0;
+    padding: 3em 1.5em 1.5em 1.5em;
+    
+}
+.intro h1{
+    font-size: 20px;
+    text-align: center;
+    color:rgb(98, 0, 128) ;
+}
+.about h2{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color:rgb(98, 0, 128) ;
+}
+.about p,.intro p{
+    text-align: center;
+}
+
+.about article{
+    margin-bottom:5em;
+}
+
+.about article span{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    color:rgb(98, 0, 128)
+}
+
+header img{
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header nav ul li{
+    display: block;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom:1.5em;
+    transition: all .3s linear;
+    border-bottom: solid 1px rgb(250, 249, 249,.4);
+    font-size: 18px;
+    border-radius: 0px;
+}
+header nav ul li:hover{
+    background-color: rgb(120, 38, 196);
+    border-radius: 13px;
+    
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(103, 57, 117);
+    border-radius: 10px;
+}
+
+main{
+    
+    margin: auto;
+}
+
+.button{
+    
+    text-decoration: none;
+    color: white;
+    background-color: rgb(103, 57, 117);
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    border-radius:30px;
+    transition: all .2s linear;
+    font-weight: 500;
+
+}
+.button:hover{
+    transform: translate(1px,-3px);
+    
+    background-color: rgb(120, 38, 196);
+    
+}
+.projects{
+    background-color: rgba(228, 228, 228, 0.3);
+    padding: 1.5em;
+}
+.projects article{
+    text-align: left;
+    margin-bottom: 5em;
+}
+.projects article h3{
+    text-transform: uppercase;
+    color:rgb(103, 57, 117) ;
+    letter-spacing: 3px;
+    font-size: 18px;
+
+}
+.projects article a{
+    margin-left:0 ;
+}
+
+.mid-p-pink{
+    color: blueviolet;
+}
+
+footer{
+    background-color: rgb(59, 47, 61);
+    color: aliceblue;
+    text-align: center;
+    padding: 1.5em;
+    position: relative;
+}
+footer ul{
+    background-color:rgb(92, 66, 107) ;
+    position: absolute;
+    top: 0;
+    bottom: 70%;
+    left: 0;
+    right: 0;
+    margin-top:0;
+    padding: 1.5em 1.9em 1em 0;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 1em;
+}
+footer ul li span{
+    color: rgb(45, 15, 48);
+    transition: color .2s linear;
+}
+footer ul li span:hover{
+    color: rgb(85, 23, 143);
+}
+footer h4{
+    padding-top:3em;
+    margin-bottom:0em;
+    color: rgb(203, 188, 204);
+}
+footer p{
+    color: rgb(203, 188, 204);
+}
+
+@media screen and (min-width: 44em){
+    header{
+        position: relative;
+    }
+    header img{
+        margin-left:0;
+        margin-top:.5em;
+    }
+    header nav{
+        background-color: transparent;
+    
+    }
+    header nav ul{
+        position: absolute;
+        top:2.3em;
+        right: .5em;
+        
+    }
+    header nav ul li{
+        display: inline-block;
+        padding: 0;
+        font-size: 16px;
+        margin-right:1em;
+    
+    }
+    header nav ul li a{
+        display: block;
+        color: rgb(96, 32, 155);
+        font-weight: 600;
+        transition: all .2s linear;
+        background-color: transparent;
+        padding:.5em;
+        border-radius: 10px;
+    }
+    header nav ul li:hover{
+        background-color: transparent;
+
+    }
+    header nav ul li a:hover{
+        transform: translateY(-2px);
+        color: blueviolet;
+        background-color: rgb(164, 125, 199,.2);
+    }
+    .intro{
+        background-color:rgb(102, 15, 136);
+        padding-top:2em;
+        padding: 3.5em;
+    }
+    .img-intro{
+        display: block;
+        max-width: 20em;
+        height: 4.5em;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-image: url(../images/icon_play.svg);
+        margin-bottom:2em;
+        transition: all linear .2s;
+    }
+    .img-intro:hover{
+        transform: translateY(-4px);
+        
+    }
+    .intro h1, .intro p{
+        color: aliceblue;
+    }
+    .intro h1{
+        margin-top: 0;
+    }
+    .about{
+       overflow: auto;
+    }
+    .button{
+        background-color: rgb(67, 0, 87);
+    }
+    .button:hover{
+        background-color: rgb(221, 221, 221);
+        color: blueviolet;
+    }
+    .coluna-1-4{
+        width: 44%;
+        margin:0 3%;
+        float: left;
+
+    }
+    footer ul{
+        padding: .7em 1.9em 1em 0;
+    }
+    footer p{
+        margin:2% 10%
+    }
+    
+}
+
+@media screen and (min-width:63em){
+    .intro{
+        background: #521a66 url(../images/bg_topo_1198x670.jpg) ;
+        background-repeat: no-repeat;
+        background-position: left top;
+        height: 35em;
+        margin-top:1.5em;
+    }
+    .intro h1{
+        font-size: 30px;
+        margin-top: 2em;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    header nav ul{
+        margin-right: 2em;
+    }
+    header img{
+        margin-left: 2em;
+    }
+    footer ul li span{
+        font-size: 35px;
+    }
+    .img-intro{
+        margin-bottom:0;
+        margin-top:10em;
+        height: 5.5em;
+    }
+    header nav ul li{
+        font-size: 19px;
+        
+    }
+}
+
+@media screen and (min-width:76em){
+    .intro{
+        background: url(../images/bg_topo_1600x1374.jpg);
+        height: 46em;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .intro h1{
+        margin-top:2em;
+    }
+    .intro p{
+        margin: 0 10%
+    }
+    .coluna-1-4{
+        width: 19%;
+    }
+    .projects{
+        overflow: auto;
+    }
+    .coluna-1-2{
+        float: left;
+        width: 46%;
+        margin: 0 2%;
+    }
+    .img-intro{
+        height: 7em;
+        margin-top:19em;
+    }
+    
+}
