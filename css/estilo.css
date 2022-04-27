@@ -298,9 +298,9 @@ footer p{
 
 @media screen and (min-width:76em){
     .intro{
-        background: url(../images/bg_topo_1600x1374.jpg);
+        background: radial-gradient(closest-corner at 50% 10%,black,transparent),url(../images/bg_topo_1600x1374.jpg);
         height: 46em;
-        background-position: top center;
+        background-position: center -10em,top center;
         background-repeat: no-repeat;
         background-size: cover;
     }
